@@ -1,0 +1,160 @@
+.button_reddit {
+  display: inline-block;
+  position: relative;
+  margin: 1em;
+  padding: 10px 30px;
+  border: 2px solid #FF4400;
+  overflow: hidden;
+  text-decoration: none;
+  font-size: 14px;
+  outline: none;
+  color: #FF4400;
+  background: transparent;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 700;
+}
+
+.button_news {
+  display: inline-block;
+  position: relative;
+  margin: 1em;
+  padding: 10px 30px;
+  border: 2px solid #4676E4;
+  overflow: hidden;
+  text-decoration: none;
+  font-size: 14px;
+  outline: none;
+  color: #4676E4;
+  background: transparent;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 700;
+}
+
+.button_reddit span {
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.button_news span {
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.button_reddit:before, .button_reddit:after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+}
+
+.button_news:before, .button_news:after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+}
+
+.button_reddit:before {
+  content: attr(data-hover);
+  -webkit-transform: 0.4s;
+  -moz-transform: 0.4s;
+  -ms-transform: 0.4s;
+  -o-transform: 0.4s;
+  transform: 0.4s;
+}
+
+.button_news:before {
+  content: attr(data-hover);
+  -webkit-transform: 0.4s;
+  -moz-transform: 0.4s;
+  -ms-transform: 0.4s;
+  -o-transform: 0.4s;
+  transform: 0.4s;
+}
+
+.button_reddit:hover span, .button_reddit:active span {
+  opacity: 0;
+  -webkit-transform: 0.4s;
+  -moz-transform: 0.4s;
+  -ms-transform: 0.4s;
+  -o-transform: 0.4s;
+  transform: 0.4s;
+}
+
+.button_news:hover span, .button_news:active span {
+  opacity: 0;
+  -webkit-transform: 0.4s;
+  -moz-transform: 0.4s;
+  -ms-transform: 0.4s;
+  -o-transform: 0.4s;
+  transform: 0.4s;
+}
+
+.button_reddit:hover:before, .button_reddit:active:after {
+  opacity: 1;
+  -webkit-transform: 0.4s;
+  -moz-transform: 0.4s;
+  -ms-transform: 0.4s;
+  -o-transform: 0.4s;
+  transform: 0.4s;
+  -webkit-transition-delay: .4s;
+  -moz-transition-delay: .4s;
+  -o-transition-delay: .4s;
+  transition-delay: .4s;
+}
+
+.button_news:hover:before, .button_news:active:after {
+  opacity: 1;
+  -webkit-transform: 0.4s;
+  -moz-transform: 0.4s;
+  -ms-transform: 0.4s;
+  -o-transform: 0.4s;
+  transform: 0.4s;
+  -webkit-transition-delay: .4s;
+  -moz-transition-delay: .4s;
+  -o-transition-delay: .4s;
+  transition-delay: .4s;
+}
+
+.button_reddit:active:before {
+  -webkit-transform: 0.4s;
+  -moz-transform: 0.4s;
+  -ms-transform: 0.4s;
+  -o-transform: 0.4s;
+  transform: 0.4s;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.button_news:active:before {
+  -webkit-transform: 0.4s;
+  -moz-transform: 0.4s;
+  -ms-transform: 0.4s;
+  -o-transform: 0.4s;
+  transform: 0.4s;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
